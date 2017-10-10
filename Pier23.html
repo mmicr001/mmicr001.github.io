@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pier 23 Restaurant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet'>
+  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!-- Header section -------------------------------------------------------------------------------> 
+<div class="jumbotron text-center">
+  <h1><strong  style="font-family:'Sofia'">Pier  23  Restaurant</strong></h1> 
+  <p style="font-family:'Sofia'">25 years of quality service at the oceanfront</p> 
+</div>
+
+<!-- Navigation Bar -------------------------------------------------------------------------------> 
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#buffet">BREAKFAST BUFFET</a></li>
+        <li><a href="#breakfastMenu">BREAKFAST MENU</a></li>
+        <li><a href="#lunchMenu">LUNCH MENU</a></li>
+        <li><a href="#dinnerMenu">DINNER MENU</a></li>
+        <li><a href="#cocktails">COCKTAILS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Breakfast Buffet ----------------------------------------------------------------------------->
+<div class="container-fluid bg-grey" id="buffet" >
+  <h2 style="font-family:'Damion'; font-size:60px" class="text-center">Buffet Items</h2>
+  <br>
+  <br>
+  
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+      <ul  style="font-family:'Damion'; font-size:40px">
+        <li>Scrambled Eggs</li>
+        <li>Western Eggs</li>
+		<li>Over easy style Eggs</li>
+		<li>Home Fries</li>
+		<li>Grits</li>
+      </ul>
+	</div>
+	
+	<div class="col-sm-1"></div>
+	
+	<div class="col-sm-5 ">
+     <ul  style="font-family:'Damion'; font-size:40px">
+        <li>Bacon</li>
+        <li>Sausage</li>
+		<li>Biscuits</li>
+		<li>Gravy</li>
+		<li>Spicy Ham Slices</li>
+      </ul>
+	</div>
+	   
+  </div>
+</div>
+
+<!-- Lunch Menu ----------------------------------------------------------------------------------->
+<div id="breakfastMenu" class="container-fluid text-center">
+
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="lunchMenu" class="container-fluid text-center bg-grey">
+  
+</div>
+
+<!-- Dinner Menu ---------------------------------------------------------------------------------->
+<div id="dinnerMenu" class="container-fluid">
+  
+</div>
+
+<!-- Cocktails ------------------------------------------------------------------------------------>
+<div id="cocktails" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(36.851135, -75.975895);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6WCuWAKSJR7Wy7uA53h7QbJTatduc65E&callback=myMap"></script>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p> 
+</footer>
+
+
+
+</body>
+</html>
