@@ -4,9 +4,45 @@
     padding: 100px 25px;
 }
 
+
 .container-fluid {
     padding: 60px 50px;
 }
+
+.header1 {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(photos/pier23.jpg);
+  background-size: cover;
+  height: 90vh;
+}
+
+.header2 {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(photos/bg3.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+
+.title {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.bg-pier {
+      background-color: #1abc9c;
+  }
 
 .bg-grey {
       background-color: #f6f6f6;
